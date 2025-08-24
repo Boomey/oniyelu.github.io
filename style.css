@@ -1,28 +1,81 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9fafc;
-  color: #333;
+  background: #f4f6f9;
+  color: #2c3e50;
+  line-height: 1.6;
 }
+
+/* Header */
 header {
-  background: #004aad;
+  background: linear-gradient(135deg, #a18cd1, #3d5af1); /* lavender to indigo */
   color: white;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  margin-top: 15px;
+}
+
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
 }
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
 main {
-  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
+
+/* Sections */
 section {
   background: white;
   margin: 20px 0;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00306e;
+  color: white;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
